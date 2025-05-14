@@ -40,6 +40,8 @@ namespace BookmarksManager
         /// </summary>
         public string Path { get; set; }
 
+        public string Tags { get; set; } 
+
         public IDictionary<string, string> Attributes = new Dictionary<string, string>();
 
         public BookmarkLink(string url = null, string title = null)

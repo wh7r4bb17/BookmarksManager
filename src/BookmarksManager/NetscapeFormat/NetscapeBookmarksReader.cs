@@ -228,6 +228,9 @@ namespace BookmarksManager
                     case "feedurl":
                         link.FeedUrl = attr.Value;
                         break;
+                    case "tags":
+                        link.Tags = attr.Value;
+                        break;
                     }
                 if (!link.Attributes.ContainsKey(attr.Key))
                     link.Attributes.Add(attr.Key, attr.Value);
